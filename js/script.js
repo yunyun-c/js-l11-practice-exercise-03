@@ -1,7 +1,7 @@
 const notRegistered = document.querySelector(".not-registered");
 
 const getRegistrationData = async function () {
-  const request = await fetch("../registrations.json");
+  const request = await fetch("registrations.json");
   const data = await request.json();
   displayContactList(data);
 };
