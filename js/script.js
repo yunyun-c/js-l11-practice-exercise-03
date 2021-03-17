@@ -1,8 +1,10 @@
 const notRegistered = document.querySelector(".not-registered");
 
 const getRegistrationData = async function () {
-  const request = await fetch("registrations.json");
+
+  const request = await fetch("https://gist.githubusercontent.com/redrambles/f37dba0e86bd77cacd11ba1054c3e7b5/raw/0cf279738447cc8aa9559cce953f693abb5c06bd/fieldtrip.json");
   const data = await request.json();
+  console.log(data);
   displayContactList(data);
 };
 
